@@ -18,5 +18,23 @@
         "exchange_currency": "MYR",
         "rate": "4.00"
       }
-    ]
-  }
+    ],
+
+      "wallet": [
+        {
+          "id": 1,
+          "user_id": "user101",
+          "name": "Multi-Currency Account"
+        },
+        {
+          "id": 2,
+          "user_id": "user102",
+          "name": "Multi-Currency Account"
+        },
+        {
+          "id": 3,
+          "user_id": "user103",
+          "name": "Multi-Currency Account"
+        }
+      ]
+    }
