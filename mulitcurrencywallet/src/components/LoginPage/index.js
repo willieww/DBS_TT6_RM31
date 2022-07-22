@@ -5,6 +5,7 @@ import DbsLogo from './assets/dbs_logo.png';
 const LoginPage = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [loginFail, setLoginFail] = useState(false);
 
     useEffect(() => {
         const loggedIn = localStorage.getItem('loggedIn');
@@ -24,9 +25,22 @@ const LoginPage = () => {
     
     const onLogin = () => {
         // call backend to check for login
-        console.log('login button clicked', username, password);
-        window.location.href = "/Home";
-        localStorage.setItem('loggedIn', true);
+        const url = `http://localhost:3500/user?username=${username}`;
+        fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            if(data.length === 0) {
+                setLoginFail(true);
+            }
+            if(data[0].password === password){
+                setLoginFail(false);
+                window.location.href = "/Home";
+                localStorage.setItem('loggedIn', true);
+            } else {
+                console.log('wrong username or password')
+                setLoginFail(true);
+            }
+        })
       }
   return (
     <div className="login-container"> 
@@ -41,6 +55,10 @@ const LoginPage = () => {
                 <label className="label-text">Password</label>
                 <input type="password" name="password" className="input" onChange={onChangePassword} value={password} />
             </div>
+
+            {loginFail && 
+                <h6 style={{ color: 'red' }}>Incorrect username or password!</h6>
+            }
 
             <button type="submit" className="login-button" onClick={onLogin}>
                 <h2 className="login-text">Login</h2>
