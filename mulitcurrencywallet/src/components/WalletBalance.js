@@ -25,16 +25,18 @@ function WalletBalance() {
           })
 
   }
- 
+
   return (
-    
+    <>
+    <Navbar />
     <div >
-        <Navbar />
+
       <Table striped bordered hover variant="dark" >
         <h1>View Balance</h1>
         <tbody>
             <tr>
                 <th>Wallet ID</th>
+                <th>User ID</th>
                 <th>Type of Account</th>
                 <th>Currency</th>
                 <th>Amount</th>
@@ -42,6 +44,7 @@ function WalletBalance() {
             {data.map((Walletitem, i) => (
                 <tr key={i}>
                     <td>{Walletitem.id}</td>
+                    <td>{Walletitem.user_id}</td>
                     <td>{Walletitem.name}</td>
                     <td>{Walletitem.currency}</td>
                     <td>{Walletitem.amount}</td>
@@ -50,6 +53,7 @@ function WalletBalance() {
         </tbody>
         </Table>
     </div>
+    </>
     
   );
 }

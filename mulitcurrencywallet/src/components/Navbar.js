@@ -7,20 +7,20 @@ function NavigationBar() {
     localStorage.setItem('loggedIn', false);
   }
   return (
-    <Navbar bg="black" expand="lg" className={styles.navbar}>
+    <Navbar bg="transparent" expand="lg" className={styles.navbar}>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="/Home" style={{ color: "white" }}>
+          <Nav.Link href="/Home" style={{ color: "black" }}>
             Home
           </Nav.Link>
-          <Nav.Link href="/Wallet" style={{ color: "white" }}>
+          <Nav.Link href="/Wallet" style={{ color: "black" }}>
             Wallet 
           </Nav.Link>
-          <Nav.Link href="/Transaction" style={{ color: "white" }}>
+          <Nav.Link href="/Transaction" style={{ color: "black" }}>
             Transaction 
           </Nav.Link>
-          <Nav.Link href="/" onClick={onLogout} style={{ color: "white" }}>
+          <Nav.Link href="/" onClick={onLogout} style={{ color: "black" }}>
             Logout
           </Nav.Link>
         </Nav>
