@@ -14,11 +14,11 @@ function NavigationBar() {
           <Nav.Link href="/Home" style={{ color: "black" }}>
             Home
           </Nav.Link>
-          <Nav.Link href="/transfer" style={{ color: "black" }}>
-            Transaction
-          </Nav.Link>
-          <Nav.Link href="/history" style={{ color: "black" }}>
+          <Nav.Link href="/Wallet" style={{ color: "black" }}>
             Wallet 
+          </Nav.Link>
+          <Nav.Link href="/Transaction" style={{ color: "black" }}>
+            Transaction 
           </Nav.Link>
           <Nav.Link href="/" onClick={onLogout} style={{ color: "black" }}>
             Logout
