@@ -41,7 +41,7 @@ function WalletBalance() {
             </tr>
             {data.map((Walletitem, i) => (
                 <tr key={i}>
-                    <td>{Walletitem.wallet_id}</td>
+                    <td>{Walletitem.id}</td>
                     <td>{Walletitem.name}</td>
                     <td>{Walletitem.currency}</td>
                     <td>{Walletitem.amount}</td>
