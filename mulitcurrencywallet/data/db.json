@@ -1,110 +1,112 @@
 {
-    "exchange_rate": [
-      {
-        "id": 1,
-        "base_currency": "USD",
-        "exchange_currency": "SGD",
-        "rate": "1.4077"
-      },
-      {
-        "id": 2,
-        "base_currency": "SGD",
-        "exchange_currency": "USD",
-        "rate": "0.80"
-      },
-      {
-        "id": 3,
-        "base_currency": "SGD",
-        "exchange_currency": "MYR",
-        "rate": "4.00"
-      }
-    ],
-
-      "wallet": [
-        {
-          "id": 1,
-          "user_id": "user101",
-          "name": "Multi-Currency Account"
-        },
-        {
-          "id": 2,
-          "user_id": "user102",
-          "name": "Multi-Currency Account"
-        },
-        {
-          "id": 3,
-          "user_id": "user103",
-          "name": "Multi-Currency Account"
-        }
-    ],
-
-      "currency": [
-        {
-          "id": 1,
-          "wallet_id": 1,
-          "currency": "USD",
-          "amount": "1023.56"
-        },
-        {
-          "id": 2,
-          "wallet_id": 2,
-          "currency": "SGD",
-          "amount": "3400.00"
-        },
-        {
-          "id": 3,
-          "wallet_id": 3,
-          "currency": "MYR",
-          "amount": "9000.00"
-        }
-    ],
-
-      "transaction": [
-        {
-          "id": 1,
-          "wallet_id": 1,
-          "debit_id": "",
-          "debit_currency": "",
-          "debit_amount": "",
-          "credit_id": "",
-          "credit_currency": "",
-          "credit_amount": "",
-          "description": "",
-          "created_at": "",
-          "created_by": "",
-          "updated_at": "",
-          "updated_by": ""
-        },
-        {
-          "id": 1,
-          "wallet_id": 2,
-          "debit_id": "",
-          "debit_currency": "",
-          "debit_amount": "",
-          "credit_id": "",
-          "credit_currency": "",
-          "credit_amount": "",
-          "description": "",
-          "created_at": "",
-          "created_by": "",
-          "updated_at": "",
-          "updated_by": ""
-        },
-        {
-          "id": 1,
-          "wallet_id": 3,
-          "debit_id": "",
-          "debit_currency": "",
-          "debit_amount": "",
-          "credit_id": "",
-          "credit_currency": "",
-          "credit_amount": "",
-          "description": "",
-          "created_at": "",
-          "created_by": "",
-          "updated_at": "",
-          "updated_by": ""
-        }
+  "exchange_rate": [
+    {
+      "id": 1,
+      "base_currency": "USD",
+      "exchange_currency": "SGD",
+      "rate": "1.4077"
+    },
+    {
+      "id": 2,
+      "base_currency": "SGD",
+      "exchange_currency": "USD",
+      "rate": "0.80"
+    },
+    {
+      "id": 3,
+      "base_currency": "SGD",
+      "exchange_currency": "MYR",
+      "rate": "4.00"
+    },
+    {
+      "id": 4,
+      "base_currency": "USD",
+      "exchange_currency": "MYR",
+      "rate": "9"
+    }
+  ],
+  "wallet": [
+    {
+      "id": 1,
+      "user_id": "user101",
+      "name": "Multi-Currency Account"
+    },
+    {
+      "id": 2,
+      "user_id": "user102",
+      "name": "Multi-Currency Account"
+    },
+    {
+      "id": 3,
+      "user_id": "user103",
+      "name": "Multi-Currency Account"
+    }
+  ],
+  "currency": [
+    {
+      "id": 1,
+      "wallet_id": 1,
+      "currency": "USD",
+      "amount": "1023.56"
+    },
+    {
+      "id": 2,
+      "wallet_id": 2,
+      "currency": "SGD",
+      "amount": "3400.00"
+    },
+    {
+      "id": 3,
+      "wallet_id": 3,
+      "currency": "MYR",
+      "amount": "9000.00"
+    }
+  ],
+  "transaction": [
+    {
+      "id": 1,
+      "wallet_id": 1,
+      "debit_id": "",
+      "debit_currency": "",
+      "debit_amount": "",
+      "credit_id": "",
+      "credit_currency": "",
+      "credit_amount": "",
+      "description": "",
+      "created_at": "",
+      "created_by": "",
+      "updated_at": "",
+      "updated_by": ""
+    },
+    {
+      "id": 1,
+      "wallet_id": 2,
+      "debit_id": "",
+      "debit_currency": "",
+      "debit_amount": "",
+      "credit_id": "",
+      "credit_currency": "",
+      "credit_amount": "",
+      "description": "",
+      "created_at": "",
+      "created_by": "",
+      "updated_at": "",
+      "updated_by": ""
+    },
+    {
+      "id": 1,
+      "wallet_id": 3,
+      "debit_id": "",
+      "debit_currency": "",
+      "debit_amount": "",
+      "credit_id": "",
+      "credit_currency": "",
+      "credit_amount": "",
+      "description": "",
+      "created_at": "",
+      "created_by": "",
+      "updated_at": "",
+      "updated_by": ""
+    }
   ]
-
 }
