@@ -44,7 +44,7 @@
       "currency": "SGD",
       "amount": "3400.00"
     },
-    {
+    { 
       "wallet_id": 2,
       "user_id": 1,
       "name": "USD Account",

@@ -35,7 +35,6 @@ function WalletBalance() {
                 <th>Type of Account</th>
                 <th>Currency</th>
                 <th>Amount</th>
-                {/* <th>Wallet Balance</th> */}
             </tr>
             {data.map((Walletitem, i) => (
                 <tr key={i}>
