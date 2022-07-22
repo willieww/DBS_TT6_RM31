@@ -4,41 +4,45 @@ import Table from 'react-bootstrap/Table';
 
 
 function WalletBalance() {
+  const [data, getData] = useState([])
+  const URL = 'http://localhost:3500/wallet';
+  
 
-    const [data, getData] = useState([])
+  useEffect(() => {
+      fetchData()
+  }, [])
 
-    useEffect(() => {
-        fetchBalance()
-    }, [])
 
-  const fetchBalance = () => {
-    fetch("./data/db.json")
-    .then((res) =>
-    res.json())
-    .then((data) => {
-    console.log(data.wallet);
-    getData(data.wallet);
-})
+  const fetchData = () => {
+      fetch(URL)
+          .then((res) =>
+              res.json())
 
-}
+          .then((response) => {
+              console.log(response);
+              getData(response);
+          })
+
+  }
 
   return (
     <div >
-        <h1>View Balance</h1>
-
       <Table striped bordered hover variant="dark" >
         <h1>View Balance</h1>
         <tbody>
             <tr>
+                <th>Wallet ID</th>
                 <th>Type of Account</th>
-                <th>Account ID</th>
+                <th>Currency</th>
+                <th>Amount</th>
                 {/* <th>Wallet Balance</th> */}
             </tr>
             {data.map((Walletitem, i) => (
                 <tr key={i}>
+                    <td>{Walletitem.wallet_id}</td>
                     <td>{Walletitem.name}</td>
-                    <td>{Walletitem.user_id}</td>
-                    {/* <td>{item.rate}</td> */}
+                    <td>{Walletitem.currency}</td>
+                    <td>{Walletitem.amount}</td>
                 </tr>
             ))}
         </tbody>

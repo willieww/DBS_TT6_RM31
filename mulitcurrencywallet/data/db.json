@@ -1,112 +1,103 @@
 {
   "exchange_rate": [
     {
-      "id": 1,
+      "ex_id": 1,
       "base_currency": "USD",
       "exchange_currency": "SGD",
       "rate": "1.4077"
     },
     {
-      "id": 2,
+      "ex_id": 2,
       "base_currency": "SGD",
       "exchange_currency": "USD",
       "rate": "0.80"
     },
     {
-      "id": 3,
+      "ex_id": 3,
       "base_currency": "SGD",
       "exchange_currency": "MYR",
       "rate": "4.00"
     },
     {
-      "id": 4,
+      "ex_id": 4,
       "base_currency": "USD",
       "exchange_currency": "MYR",
       "rate": "9.00"
     }
   ],
-  "wallet": [
+
+  "user": [
     {
-      "id": 1,
-      "user_id": "user101",
-      "name": "Multi-Currency Account"
-    },
-    {
-      "id": 2,
-      "user_id": "user102",
-      "name": "Multi-Currency Account"
-    },
-    {
-      "id": 3,
-      "user_id": "user103",
-      "name": "Multi-Currency Account"
+      "user_id": 1,
+      "username": "test",
+      "password": "password",
+      "name": "ABC"
     }
   ],
+
+  "wallet": [
+    {
+      "wallet_id": 1,
+      "user_id": 1,
+      "name": "SGD Account",
+      "currency_id": 2,
+      "currency": "SGD",
+      "amount": "3400.00"
+    },
+    {
+      "wallet_id": 2,
+      "user_id": 1,
+      "name": "USD Account",
+      "currency_id": 1,
+      "currency": "USD",
+      "amount": "1023.56"
+    },
+    {
+      "wallet_id": 3,
+      "user_id": 1,
+      "name": "MYR Account",
+      "currency_id": 3,
+      "currency": "MYR",
+      "amount": "9000.00"
+    }
+  ],
+
   "currency": [
     {
-      "id": 1,
+      "currency_id": 1,
       "wallet_id": 1,
       "currency": "USD",
       "amount": "1023.56"
     },
     {
-      "id": 2,
+      "currency_id": 2,
       "wallet_id": 2,
       "currency": "SGD",
       "amount": "3400.00"
     },
     {
-      "id": 3,
+      "currency_id": 3,
       "wallet_id": 3,
       "currency": "MYR",
       "amount": "9000.00"
     }
   ],
+
   "transaction": [
     {
-      "id": 1,
+      "txn_id": 1,
       "wallet_id": 1,
-      "debit_id": "",
-      "debit_currency": "",
-      "debit_amount": "",
-      "credit_id": "",
-      "credit_currency": "",
-      "credit_amount": "",
-      "description": "",
-      "created_at": "",
-      "created_by": "",
-      "updated_at": "",
-      "updated_by": ""
-    },
-    {
-      "id": 1,
-      "wallet_id": 2,
-      "debit_id": "",
-      "debit_currency": "",
-      "debit_amount": "",
-      "credit_id": "",
-      "credit_currency": "",
-      "credit_amount": "",
-      "description": "",
-      "created_at": "",
-      "created_by": "",
-      "updated_at": "",
-      "updated_by": ""
-    },
-    {
-      "id": 1,
-      "wallet_id": 3,
-      "debit_id": "",
-      "debit_currency": "",
-      "debit_amount": "",
-      "credit_id": "",
-      "credit_currency": "",
-      "credit_amount": "",
-      "description": "",
-      "created_at": "",
-      "created_by": "",
-      "updated_at": "",
-      "updated_by": ""
+      "debit_id": 1,
+      "debit_currency": "SGD",
+      "debit_amount": "1407",
+      "credit_id": 1,
+      "credit_currency": "USD",
+      "credit_amount": "1000",
+      "description": "Exchane SGD for USD",
+      "created_at": "22 July 2022",
+      "created_by": "test",
+      "updated_at": "23 July 2022",
+      "updated_by": "test"
     }
   ]
 }
