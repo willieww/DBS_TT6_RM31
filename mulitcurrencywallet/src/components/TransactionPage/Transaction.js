@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, {useState} from 'react';
 import './Transaction.css';
+import Navbar from '../Navbar';
 
 const TransactionPage = () => {
     const [Wallet, setWallet] = useState('');
@@ -15,7 +16,9 @@ const TransactionPage = () => {
     }
 
     return (
+        
         <div className="Transaction-container">
+            <Navbar />
             <form className="Transaction-Window">
                 <div className="sep-container">
                     <label className="label-text">Account</label>

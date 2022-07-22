@@ -14,9 +14,6 @@ function NavigationBar() {
           <Nav.Link href="/Home" style={{ color: "black" }}>
             Home
           </Nav.Link>
-          <Nav.Link href="/transfer" style={{ color: "black" }}>
-            Transaction
-          </Nav.Link>
           <Nav.Link href="/Wallet" style={{ color: "black" }}>
             Wallet 
           </Nav.Link>
