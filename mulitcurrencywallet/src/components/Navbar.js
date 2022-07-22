@@ -2,7 +2,6 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import styles from "./Navbar.css";
 
-
 function NavigationBar() {
   return (
     <Navbar bg="transparent" expand="lg" className={styles.navbar}>
