@@ -1,0 +1,22 @@
+{
+    "exchange_rate": [
+      {
+        "id": 1,
+        "base_currency": "USD",
+        "exchange_currency": "SGD",
+        "rate": "1.4077"
+      },
+      {
+        "id": 2,
+        "base_currency": "SGD",
+        "exchange_currency": "USD",
+        "rate": "0.80"
+      },
+      {
+        "id": 3,
+        "base_currency": "SGD",
+        "exchange_currency": "MYR",
+        "rate": "4.00"
+      }
+    ]
+  }
