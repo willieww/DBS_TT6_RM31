@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
-import Navbar from './Navbar.js';
 import WalletBalance from './WalletBalance.js';
 
 
@@ -28,7 +27,6 @@ function TableData() {
 
   return (
     <>
-      <Navbar />
       <Table striped bordered hover variant="dark" >
         <h1>Exchange Rate</h1>
         <tbody>
