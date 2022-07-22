@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
+import Navbar from './Navbar.js';
  
 function TableData() {
   const [data, getData] = useState([])
   const URL = 'http://localhost:3500/exchange_rate';
+  
 
   useEffect(() => {
       fetchData()
@@ -24,11 +26,12 @@ function TableData() {
 
   return (
     <>
+      <Navbar />
       <Table striped bordered hover variant="dark" >
         <h1>Exchange Rate</h1>
         <tbody>
             <tr>
-                <th s>Base Currency</th>
+                <th>Base Currency</th>
                 <th>Exchange Currency</th>
                 <th>Rate</th>
             </tr>
