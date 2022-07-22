@@ -36,5 +36,75 @@
           "user_id": "user103",
           "name": "Multi-Currency Account"
         }
-      ]
-    }
+    ],
+
+      "currency": [
+        {
+          "id": 1,
+          "wallet_id": 1,
+          "currency": "USD",
+          "amount": "1023.56"
+        },
+        {
+          "id": 2,
+          "wallet_id": 2,
+          "currency": "SGD",
+          "amount": "3400.00"
+        },
+        {
+          "id": 3,
+          "wallet_id": 3,
+          "currency": "MYR",
+          "amount": "9000.00"
+        }
+    ],
+
+      "transaction": [
+        {
+          "id": 1,
+          "wallet_id": 1,
+          "debit_id": "",
+          "debit_currency": "",
+          "debit_amount": "",
+          "credit_id": "",
+          "credit_currency": "",
+          "credit_amount": "",
+          "description": "",
+          "created_at": "",
+          "created_by": "",
+          "updated_at": "",
+          "updated_by": ""
+        },
+        {
+          "id": 1,
+          "wallet_id": 2,
+          "debit_id": "",
+          "debit_currency": "",
+          "debit_amount": "",
+          "credit_id": "",
+          "credit_currency": "",
+          "credit_amount": "",
+          "description": "",
+          "created_at": "",
+          "created_by": "",
+          "updated_at": "",
+          "updated_by": ""
+        },
+        {
+          "id": 1,
+          "wallet_id": 3,
+          "debit_id": "",
+          "debit_currency": "",
+          "debit_amount": "",
+          "credit_id": "",
+          "credit_currency": "",
+          "credit_amount": "",
+          "description": "",
+          "created_at": "",
+          "created_by": "",
+          "updated_at": "",
+          "updated_by": ""
+        }
+  ]
+
+}
