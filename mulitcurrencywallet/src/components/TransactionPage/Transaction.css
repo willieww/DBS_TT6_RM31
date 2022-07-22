@@ -28,3 +28,20 @@
     background-color: rgb(117, 116, 116);
     width: 100%;
 }
+
+.submit-button {
+    background-color: red;
+    height: 40px;
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    border-radius: 8px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-text {
+    color: white;
+    font-size: 22px;
+}

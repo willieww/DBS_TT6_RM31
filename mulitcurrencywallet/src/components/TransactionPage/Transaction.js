@@ -15,9 +15,14 @@ const TransactionPage = () => {
         setAmount(e.target.value);
     }
 
+    const exchangeCurrency = () => {
+        console.log('currency exchanged')
+    }
+
+
     return (
         
-        <div className="Transaction-container">
+        <div className="Transaction-container" onsubmit="exchangeCurrency()">
             <Navbar />
             <form className="Transaction-Window">
                 <div className="sep-container">
@@ -57,7 +62,9 @@ const TransactionPage = () => {
                     
                 </div>
 
-                
+                <button type="submit" className="btn submit-button">
+                    <h2 className="submit-text">Submit</h2>
+                </button>
             </form>
         </div>
         
