@@ -3,6 +3,9 @@ import { Navbar, Nav } from "react-bootstrap";
 import styles from "./Navbar.css";
 
 function NavigationBar() {
+  const onLogout = () => {
+    localStorage.setItem('loggedIn', false);
+  }
   return (
     <Navbar bg="transparent" expand="lg" className={styles.navbar}>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -16,6 +19,9 @@ function NavigationBar() {
           </Nav.Link>
           <Nav.Link href="/history" style={{ color: "black" }}>
             Wallet 
+          </Nav.Link>
+          <Nav.Link href="/" onClick={onLogout} style={{ color: "black" }}>
+            Logout
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
