@@ -2,6 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, {useState} from 'react';
 import './Transaction.css';
 import Navbar from '../Navbar';
+import Dropdown from 'react-bootstrap/Dropdown';
+
 
 const TransactionPage = () => {
     const [Wallet, setWallet] = useState('');
@@ -20,34 +22,42 @@ const TransactionPage = () => {
     }
 
 
+
+
     return (
         
         <div className="Transaction-container" onsubmit="exchangeCurrency()">
             <Navbar />
             <form className="Transaction-Window">
+                
                 <div className="sep-container">
                     <label className="label-text">Account</label>
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <Dropdown>
+                        <Dropdown.Toggle variant="secondary" id="dropdown-basic">
                             Select Account
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            
-                        </div>
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            <Dropdown.Item href="#/action-1">Wallet 1</Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">Wallet 2</Dropdown.Item>
+                            <Dropdown.Item href="#/action-3">Wallet 3</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
                 </div>
 
                 <div className="sep-container">
                     <label className="label-text">Currency</label>
-                    
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Select Currency
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#">SGD</a>
-                            <a class="dropdown-item" href="#">MYR</a>
-                            <a class="dropdown-item" href="#">USD</a>
-                        </div>
-                    </div>
+                    <Dropdown>
+                        <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+                            Select Account
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            <Dropdown.Item href="#/action-1">SGD</Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">USD</Dropdown.Item>
+                            <Dropdown.Item href="#/action-3">MYR</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
                 </div>
 
                 <div className="sep-container">
