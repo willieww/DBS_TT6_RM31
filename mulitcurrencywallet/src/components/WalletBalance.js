@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Table from 'react-bootstrap/Table';
+import Navbar from './Navbar';
 
 
 function WalletBalance() {
@@ -26,7 +27,9 @@ function WalletBalance() {
   }
 
   return (
+    
     <div >
+        <Navbar />
       <Table striped bordered hover variant="dark" >
         <h1>View Balance</h1>
         <tbody>
