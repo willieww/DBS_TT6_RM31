@@ -5,12 +5,12 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import WalletBalance from './components/WalletBalance';
 import TransactionPage from './components/TransactionPage/Transaction';
 
-function App() {
+function App() { 
   return (
     <div>
       <Router>
         <Routes>
-          
+
           <Route path="/Home" exact element={<Home />} />
           <Route path="/" exact element={<LoginPage />} />
           <Route path="/Wallet" exact element={<WalletBalance />} />

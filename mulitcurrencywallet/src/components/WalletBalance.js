@@ -25,7 +25,7 @@ function WalletBalance() {
           })
 
   }
-
+ 
   return (
     
     <div >
