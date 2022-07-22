@@ -12,13 +12,10 @@ function NavigationBar() {
             Home
           </Nav.Link>
           <Nav.Link href="/transfer" style={{ color: "black" }}>
-            Transfer
+            Transaction
           </Nav.Link>
           <Nav.Link href="/history" style={{ color: "black" }}>
-            Tx History
-          </Nav.Link>
-          <Nav.Link href="/balance" style={{ color: "black" }}>
-            Balance
+            Wallet 
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

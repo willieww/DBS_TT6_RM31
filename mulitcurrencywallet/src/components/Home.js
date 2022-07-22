@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
 import Navbar from './Navbar.js';
- 
+import WalletBalance from './WalletBalance.js';
+
+
 function TableData() {
   const [data, getData] = useState([])
   const URL = 'http://localhost:3500/exchange_rate';
@@ -44,6 +46,8 @@ function TableData() {
             ))}
         </tbody>
         </Table>
+        
+        <WalletBalance />
 
     </>
 );
