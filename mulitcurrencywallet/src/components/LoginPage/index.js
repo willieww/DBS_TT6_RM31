@@ -29,6 +29,9 @@ const LoginPage = () => {
         fetch(url)
         .then(response => response.json())
         .then(data => {
+            if(data.length === 0) {
+                setLoginFail(true);
+            }
             if(data[0].password === password){
                 setLoginFail(false);
                 window.location.href = "/Home";
