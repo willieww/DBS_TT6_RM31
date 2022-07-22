@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
 import WalletBalance from './WalletBalance.js';
-
+import Navbar from './Navbar';
 
 function TableData() {
   const [data, getData] = useState([])
@@ -27,6 +27,7 @@ function TableData() {
 
   return (
     <>
+    <Navbar />
       <Table striped bordered hover variant="dark" >
         <h1>Exchange Rate</h1>
         <tbody>
