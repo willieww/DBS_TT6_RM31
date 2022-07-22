@@ -35,10 +35,10 @@ function WalletBalance() {
                 <th>Account ID</th>
                 {/* <th>Wallet Balance</th> */}
             </tr>
-            {data.map((item, i) => (
+            {data.map((Walletitem, i) => (
                 <tr key={i}>
-                    <td>{item.name}</td>
-                    <td>{item.user_id}</td>
+                    <td>{Walletitem.name}</td>
+                    <td>{Walletitem.user_id}</td>
                     {/* <td>{item.rate}</td> */}
                 </tr>
             ))}
